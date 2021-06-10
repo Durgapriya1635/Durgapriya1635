@@ -1,0 +1,20 @@
+<main >
+    <!-- <h3>from header:{{reasign_emtyval}}</h3>
+    <h2>from aside:{{feedbackvalue}}</h2>
+
+    <h3>{{commonService.getUserData()}}</h3>
+    <h3>getvalue:{{commonService.getvalue()}}</h3> -->
+    <!-- <app-template-form #templateForm></app-template-form> -->
+    <!-- <button type="submit" (click)="getUserData()">Submit</button> -->
+    <!-- <app-reactive></app-reactive> -->
+    <!-- <app-aside1 (inform)="receivefunction()" #aside1></app-aside1> -->
+    <app-reactive #reactiveForm></app-reactive>
+    <app-reactive #reactiveForm></app-reactive>
+    <button type="submit" (click)="onSubmit()">Submit</button>
+    <ng-container *ngIf="isFormValid">
+        <label>First name: {{reactiveFormData.get('name').value}}</label>
+        <label>First name: {{reactiveFormData.controls.email.value}}</label>
+        <label>First name: {{reactiveFormData.get('mobile').value}}</label>
+    </ng-container>
+    
+</main>

@@ -1,0 +1,13 @@
+<form [formGroup]="userForm" novalidate>
+ <input type="text" name="name" placeholder="Name" id="" formControlName="name">
+ <br><br>
+ <input type="text" name="email" placeholder="Email" id="" formControlName="email"><br><br>
+ <input type="text" name="mobile" placeholder="Mobile" id="" formControlName="mobile"><br><br>
+
+</form>
+<!-- <form [formGroup]="studentlist" (ngSubmit)="onSubmit()">
+    <input type="text" placeholder="name" name="name" formControlName="name"><br><br>
+    <input type="text" placeholder="mark" name="mark" formControlName="mark"><br><br>
+    <button type="submit" [disabled]="!studentlist.valid">submit</button>
+    <button type="button" (click)="setvalue()">setbutton</button>
+</form> -->

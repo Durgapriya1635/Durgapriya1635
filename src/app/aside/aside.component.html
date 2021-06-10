@@ -1,0 +1,21 @@
+<aside>
+    {{passingvalue}}<br><br>
+    array:{{arrvalue}}<br><br>
+    obj:{{objvalue.fname}} {{objvalue.lname}}<br><br>
+   
+   
+   
+    aside part
+    <button (click)=clickfunction()>submit</button><br>
+    <h2>car registration</h2>
+    <button (click)=carfunction()>login</button>
+
+    <ul>
+        <li *ngFor="let item of Feedback" (click)="Feedbackclick(item)">
+            {{item}}
+        </li>
+    </ul>
+    <h1>{{userData}}</h1>
+    <input type="text" #username >
+    <button (click)="commonService.setvalue(username.value)">submit</button>
+</aside>
